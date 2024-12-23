@@ -1,0 +1,33 @@
+{
+  "name": "minecraft-spot-server",
+  "version": "1.0.0",
+  "bin": {
+    "minecraft-spot-server": "bin/minecraft-spot-server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.146",
+    "@types/node": "22.10.2",
+    "aws-cdk": "2.173.2",
+    "esbuild": "^0.24.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.7.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-auto-scaling": "^3.716.0",
+    "@aws-sdk/client-ec2": "^3.716.0",
+    "@aws-sdk/client-route-53": "^3.716.0",
+    "@aws-sdk/client-s3": "^3.715.0",
+    "aws-cdk-lib": "^2.173.2",
+    "cdk-fck-nat": "^1.5.11",
+    "constructs": "^10.4.2",
+    "dotenv": "^16.4.7",
+    "p-queue": "^8.0.1",
+    "rcon-client": "^4.2.5",
+    "source-map-support": "^0.5.21"
+  }
+}
